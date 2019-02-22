@@ -1,0 +1,8 @@
+{
+  "name": "Sprint-Challenge-RDBMS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/olivia-osborn/Sprint-Challenge-RDBMS.git",
+  "author": "Olivia Osborn <olioz95@gmail.com>",
+  "license": "MIT"
+}
