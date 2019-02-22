@@ -29,9 +29,20 @@ This will be akin to the Web API that you built in the last sprint, only this ti
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. Explain the difference between `RDBMS` and `SQL`.
+
+Relational Database Management Systems (RDBMS) are a way to manage digital databases, and Structured Query Language (SQL) is the standard language used in these to manage the data. RDBMS usually have extra features that aren't in the standard, but most RDBMS support SQL.  
+
 1. Why do tables need a `primary key`?
+
+A primary key is a value in a table (id) that allows us to uniquely identify, and quickly search for data in a table.
+
 1. What is the name given to a table column that references the primary key on another table.
+
+Foreign key
+
 1. What do we need in order to have a _many to many_ relationship between two tables.
+
+You need to have a third table between the two that select a unique id from each table that matches the tables to each other.
 
 ## Project Set Up
 
@@ -55,15 +66,15 @@ Follow these steps for completing your project.
 **NOTE** There is no boilerplate for you for this project. You will need to take the steps necessary for creating this project from scratch. Start by initializing your project with a `package.json` file and go from there.
 
 - [ ] A `project` can contain multiple actions and has:
-  - [ ] a unique Id.
-  - [ ] a name.
-  - [ ] a description.
-  - [ ] a flag that indicates if the project is complete or not.
+  - [x] a unique Id.
+  - [x] a name.
+  - [x] a description.
+  - [x] a flag that indicates if the project is complete or not.
 - [ ] An `action` belongs to only one project. An action has:
-  - [ ] a unique id.
-  - [ ] a description of what needs to be done.
-  - [ ] a notes column to add additional information.
-  - [ ] a flag that indicates if the action has been completed.
+  - [x] a unique id.
+  - [x] a description of what needs to be done.
+  - [x] a notes column to add additional information.
+  - [x] a flag that indicates if the action has been completed.
 
 Feel free to name the tables and fields anything you want. **Add relationships** as you see fit.
 
