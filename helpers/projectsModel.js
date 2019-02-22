@@ -7,11 +7,13 @@ const get = () => {
 }
 
 const getById = (id) => {
-    return db("projects")
-        .where({id})
-        .first()
-        .from("projects")
-        .innerJoin("actions", "projects.id", "actions.projectId")
+    let project = db.select("projects.id", "projects.name", "projects.description", "projects.completed")
+    .from("projects")
+    .where({"projects.id": id})
+    .innerJoin("actions", "projects.id", "actions.projectId")
+    .first()
+    return project
+        // .from("projects")
 }
 
 const insert = (newProject) => {
